@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Municipal Services Management";
+}
+
+<div class="container my-5">
+    <div class="jumbotron text-center bg-light p-5 shadow-sm rounded">
+        <h1 class="display-4 text-primary">@ViewBag.WelcomeMessage</h1>
+        <p class="lead text-secondary">Efficiently managing essential municipal services in one place</p>
+        <hr class="my-4">
+        <p>Access and manage key services for your municipality, including water supply, waste management, and park maintenance.</p>
+        <p class="text-muted">Total Services Managed: <strong>@ViewBag.ServiceCount</strong></p>
+        <a href="https://learn.microsoft.com/aspnet/core" target="_blank" class="btn btn-outline-primary btn-lg mt-3">Learn ASP.NET Core</a>
+    </div>
+
+    <div class="row text-center mt-5">
+        <!-- Water Supply Section -->
+        <div class="col-md-4">
+            <div class="card shadow-sm border-primary mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Water Supply</h5>
+                    <p class="card-text">Monitor water consumption and supply levels across different zones.</p>
+                    <a asp-controller="WaterSupplies" asp-action="Index" class="btn btn-primary">Manage Water Supply</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Waste Management Section -->
+        <div class="col-md-4">
+            <div class="card shadow-sm border-success mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Waste Management</h5>
+                    <p class="card-text">Track waste collection schedules and manage disposal processes.</p>
+                    <a asp-controller="WasteManagements" asp-action="Index" class="btn btn-success">Manage Waste</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Park Management Section -->
+        <div class="col-md-4">
+            <div class="card shadow-sm border-info mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-info">Park Management</h5>
+                    <p class="card-text">Oversee park locations and operational hours for public enjoyment.</p>
+                    <a asp-controller="ParkManagements" asp-action="Index" class="btn btn-info">Manage Parks</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
