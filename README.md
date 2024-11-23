@@ -15,6 +15,14 @@ This is a front-end view for a **Municipal Services Management Dashboard**, buil
 
 ---
 
+## User Interface
+
+Below is a preview of the dashboard's interface:
+
+![image](https://github.com/user-attachments/assets/8907ebd3-75dd-48be-97a3-93020a26926d)
+
+---
+
 ## Tech Stack
 
 - **ASP.NET Core MVC:** Backend framework for server-side rendering.
