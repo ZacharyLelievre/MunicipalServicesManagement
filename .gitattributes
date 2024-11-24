@@ -1,4 +1,7 @@
 *.html linguist-generated=true
+*.htm linguist-generated=true
+*.HTML linguist-generated=true
+
 
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
